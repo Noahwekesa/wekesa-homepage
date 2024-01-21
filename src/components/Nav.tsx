@@ -43,16 +43,33 @@ export default function NavBar() {
       </div>
 
       {/* title */}
-      <div>
-        <a>🥤</a>
-      </div>
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 90 }}
+        whileTap={{
+          scale: 0.8,
+          rotate: -90,
+          borderRadius: '100%'
+        }}
+      >
+        🥤
+      </motion.div>
 
       {/* check if were on mobile or not */}
       {matches && (
         <div className="flex gap-12">
-          <a href="/works">works</a>
-          <a href="/works">contact</a>
-          <a href="/works">source</a>
+          <a className="hover:underline" href="/works">
+            works
+          </a>
+          <a className="hover:underline" href="/contact">
+            contact
+          </a>
+          <a
+            className="hover:underline"
+            href="http://github.com/Noahwekesa/wekesa-homepage.git"
+            target="_blank"
+          >
+            source
+          </a>
         </div>
       )}
 
@@ -94,15 +111,27 @@ export default function NavBar() {
             variants={navMotion}
             animate="visible"
             initial="hidden"
-            className="flex flex-col gap-24 text-lg "
+            className="flex flex-col gap-24 text-lg"
           >
-            <motion.a variants={itemMotion} href="/works">
+            <motion.a
+              variants={itemMotion}
+              className="hover:underline"
+              href="/works"
+            >
               works
             </motion.a>
-            <motion.a variants={itemMotion} href="/works">
+            <motion.a
+              variants={itemMotion}
+              className="hover:underline"
+              href="/works"
+            >
               contact
             </motion.a>
-            <motion.a variants={itemMotion} href="/works">
+            <motion.a
+              variants={itemMotion}
+              className="hover:underline"
+              href="/works"
+            >
               source
             </motion.a>
           </motion.div>
