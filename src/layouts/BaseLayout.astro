@@ -1,0 +1,32 @@
+---
+import '../style/global.css'
+import '@fontsource/syne'
+import NavBar from '../components/Nav'
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="noah wekesa portfolio" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar />
+    <slot />
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: 'Syne';
+  }
+</style>

@@ -1,9 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<Layout title="Wekesa Portfolio.">
-	<main>
-	<h1>HomePage</h1>
-	</main>
-</Layout>
+<BaseLayout title="Wekesa Portfolio.">
+  <main>
+    <div class="avatar">
+      <div class="w-24 rounded-xl"></div>
+    </div>
+    <div class="avatar">
+      <div class="w-24 rounded-full">
+        <img src="/noah.jpg" alt="image of noah wekesa" />
+      </div>
+    </div>
+  </main>
+</BaseLayout>
