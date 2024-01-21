@@ -2,6 +2,22 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useMediaQuery } from '../utils/useMediaQuery'
 
+const navMotion = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.15
+    }
+  },
+  hidden: {
+    opacity: 0
+  }
+}
+const itemMotion = {
+  visible: { opacity: 1, x: 0 },
+  hidden: { opacity: 0, x: -100 }
+}
 export default function NavBar() {
   const [toggled, setToggled] = useState(false)
   const matches = useMediaQuery('(min-width: 1280px)')
@@ -72,11 +88,22 @@ export default function NavBar() {
           initial={{ opacity: 0, x: 25 }}
           className="fixed flex bottom-0 bg-base-100 left-0 w-full h-screen items-center justify-center"
         >
-          <div className="flex flex-col gap-24 text-lg">
-            <a href="/works">works</a>
-            <a href="/works">contact</a>
-            <a href="/works">source</a>
-          </div>
+          <motion.div
+            variants={navMotion}
+            animate="visible"
+            initial="hidden"
+            className="flex flex-col gap-24 text-lg"
+          >
+            <motion.a variants={itemMotion} href="/works">
+              works
+            </motion.a>
+            <motion.a variants={itemMotion} href="/works">
+              contact
+            </motion.a>
+            <motion.a variants={itemMotion} href="/works">
+              source
+            </motion.a>
+          </motion.div>
         </motion.div>
       )}
     </nav>
