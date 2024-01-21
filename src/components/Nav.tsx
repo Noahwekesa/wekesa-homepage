@@ -38,11 +38,13 @@ export default function NavBar() {
           strokeLinecap="round"
         />
       </svg>
-      <div>🥤</div>
+      <div className="text-lg font-bold">
+        <a href="/">Noah Wekesa</a>
+      </div>
 
       {/* title */}
-      <div className="text-lg font-bold">
-        <a href="/">Wekesa.</a>
+      <div>
+        <a>🥤</a>
       </div>
 
       {/* check if were on mobile or not */}
@@ -86,13 +88,13 @@ export default function NavBar() {
             x: 25
           }}
           initial={{ opacity: 0, x: 25 }}
-          className="fixed flex bottom-0 bg-base-100 left-0 w-full h-screen items-center justify-center"
+          className="fixed flex bottom-0 z-[1] bg-base-100 left-0 w-full h-screen items-center justify-center"
         >
           <motion.div
             variants={navMotion}
             animate="visible"
             initial="hidden"
-            className="flex flex-col gap-24 text-lg"
+            className="flex flex-col gap-24 text-lg "
           >
             <motion.a variants={itemMotion} href="/works">
               works
