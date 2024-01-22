@@ -1,1 +1,36 @@
-<div>Works</div>
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="Wekesa - complete projects">
+  <div class="items-start underline text-5xl justify-center mx-auto flex">
+    works
+  </div>
+  <div class="flex items-center min-h-screen container justify-center mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <!--Sushiman landing page -->
+      <div class="p-5 card w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img src="works/sushiman.png" alt="noahwekesa.github.io/recipe/" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">SUSHIMAN</h2>
+          <p>A single page website for japanese food restaurant</p>
+        </div>
+      </div>
+      <!--a-->
+      <div class="card p-5 w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
