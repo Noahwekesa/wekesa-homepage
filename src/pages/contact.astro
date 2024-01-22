@@ -2,4 +2,30 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="Contact Wekesa" />
+<BaseLayout title="Wekesa Contact me">
+  <div class="flex flex-row justify-between">
+    <div class="items-center">
+      <div class="text-6xl">Get In Touch</div>
+      <div>Noahwekesa0@gmail.com</div>
+    </div>
+    <div>
+      <form action="post">
+        <div class="flex flex-col">
+          <input
+            type="text"
+            placeholder="Enter your names"
+            class="input input-bordered w-full max-w-xs"
+          />
+
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <textarea class="textarea textarea-bordered" placeholder="Message"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</BaseLayout>

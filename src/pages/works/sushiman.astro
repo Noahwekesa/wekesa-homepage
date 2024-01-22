@@ -3,12 +3,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title="sushiman - Noah Wekesa">
-  <div class="flex justify-center">
+  <div class="flex flex-col items-center justify-center">
     <div class="items-start text-sm breadcrumbs">
       <ul>
-        <li><a class="link-accent">works</a></li>
+        <li><a class="link-accent" href="/works">works</a></li>
         <li class="text-xl font-bold">Sushiman</li>
       </ul>
+    </div>
+
+    <div class="items-center">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Dignissimos
+        vel deserunt fugit id laborum nostrum delectus expedita?<br /> Delectus sunt
+        voluptatibus excepturi repellat fugiat, perspiciatis<br /> ipsum ullam pariatur
+        asperiores sapiente quidem.
+      </p>
+      <div class="mt-4 justify-center">
+        <ul>
+          <li>
+            Website: <a
+              class="underline text-blue-500"
+              href="https://restaraunt1.netlify.app/"
+              >https://restaraunt1.netlify.app/</a
+            >
+          </li>
+          <li>
+            Stack: <span class="text-pink-500">
+              Astrojs/ Typescript / daisyUi / netlify / tailwind css
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <img src="works/sushiman.png" alt="" />
+      </div>
     </div>
   </div>
 </BaseLayout>
