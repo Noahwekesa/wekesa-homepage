@@ -3,7 +3,7 @@ import '../style/global.css'
 import '@fontsource/syne'
 import NavBar from '../components/Nav'
 import ThemeChanger from '../components/ThemeChanger.astro'
-
+import Footer from '../components/footer.astro'
 interface Props {
   title: string
 }
@@ -33,5 +33,6 @@ const { title } = Astro.props
     <NavBar client:load />
     <slot />
     <ThemeChanger />
+    <Footer />
   </body>
 </html>
