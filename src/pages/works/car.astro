@@ -2,31 +2,32 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="sushiman - Noah Wekesa">
+<BaseLayout title="Buy and Selling Cars - Noah Wekesa">
   <div class="flex flex-col items-center justify-center">
     <div class="items-start text-sm breadcrumbs">
       <ul>
         <li><a class="link-accent" href="/works">works</a></li>
-        <li class="text-xl font-bold">Django Todo List App</li>
+        <li class="text-xl font-bold">
+          Django Buy and Sell Cars web application
+        </li>
       </ul>
     </div>
 
     <div class="items-center">
       <p>
-        This is a simple Todo List web application built <br />with Django,
-        DaisyUI, and HTMX. <br /> DaisyUI provides a set of stylish UI components,
-        <br />
-        and HTMX enables seamless and fast interactions <br /> between the client
-        and server.
+        This Django application is a full-stack solution for <br /> buying and selling
+        cars. It allows users to create, view, and <br />manage car listings, as
+        well as interact with other users.
       </p>
       <h4 class="underline mt-4">Features</h4>
-
       <ul>
-        <li>Add, edit, and delete tasks without full page reload</li>
-        <li>Mark tasks as complete</li>
-        <li>Responsive and user-friendly design</li>
+        <li>User registration and authentication</li>
       </ul>
-
+      <li>Car listing creation and management</li><li>
+        Car details display and search
+      </li><li>User profiles and car history</li><li>
+        Admin panel for managing users and cars
+      </li>
       <div class="mt-4 justify-center">
         <ul class="p-9">
           <li class="p-2">
@@ -37,7 +38,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
           </li>
           <li class="p-2">
             Stack: <span class="text-pink-500 bg-zinc-800 p-2 rounded">
-              HTML / Django / tailwind CSS / DaisyUI / HTMX
+              HTML / Django / Bootstrap 5
             </span>
           </li>
           <li class="p-2">
@@ -49,7 +50,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
           <li class="p-2">
             Source Code
             <a
-              href="https://github.com/Noahwekesa/todoListApp-django"
+              href="https://github.com/Noahwekesa/CarMax-django"
               class="text-pink-500 bg-zinc-800 p-2 rounded">Github</a
             >
           </li>
@@ -57,10 +58,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
       </div>
     </div>
     <div class="w-auto m-auto h-auto">
-      <img class="w-100 h-64" src="/works/todo.png" alt="" />
+      <img
+        class="w-100 h-64"
+        src="https://github.com/Noahwekesa/CarMax-django/blob/master/preview/car.png?raw=true"
+        alt=""
+      />
       <img
         class="mt-6 w-100 h-64"
-        src="https://github.com/Noahwekesa/todoListApp-django/blob/master/images/login.png?raw=true"
+        src="https://github.com/Noahwekesa/CarMax-django/blob/master/preview/list.png?raw=true"
         alt=""
       />
     </div>
