@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="sushiman - Noah Wekesa">
+  <div class="flex flex-col items-center justify-center">
+    <div class="items-start text-sm breadcrumbs">
+      <ul>
+        <li><a class="link-accent" href="/works">works</a></li>
+        <li class="text-xl font-bold">Django Todo List App</li>
+      </ul>
+    </div>
+
+    <div class="items-center">
+      <p>
+        This is a simple Todo List web application built <br />with Django,
+        DaisyUI, and HTMX. <br /> DaisyUI provides a set of stylish UI components,
+        <br />
+        and HTMX enables seamless and fast interactions <br /> between the client
+        and server.
+      </p>
+      <h4 class="underline mt-4">Features</h4>
+
+      <ul>
+        <li>Add, edit, and delete tasks without full page reload</li>
+        <li>Mark tasks as complete</li>
+        <li>Responsive and user-friendly design</li>
+      </ul>
+
+      <div class="mt-4 justify-center">
+        <ul class="p-9">
+          <li class="p-2">
+            Website: <a
+              class="underline text-blue-500"
+              href="https://github.com/noahwekesa/todoListApp-django">Link</a
+            >
+          </li>
+          <li class="p-2">
+            Stack: <span class="text-pink-500 bg-zinc-800 p-2 rounded">
+              HTML / Django / tailwind CSS / DaisyUI / HTMX
+            </span>
+          </li>
+          <li class="p-2">
+            Documentation: <a
+              href="https://github.com/noahwekesa/todoListApp-django/README.md"
+              class="text-pink-500 bg-zinc-800 p-2 rounded">README.md</a
+            >
+          </li>
+          <li class="p-2">
+            Source Code
+            <a
+              href="https://github.com/Noahwekesa/todoListApp-django"
+              class="text-pink-500 bg-zinc-800 p-2 rounded">Github</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-auto m-auto h-auto">
+      <img src="/works/todo.png" alt="" />
+    </div>
+  </div>
+</BaseLayout>
