@@ -22,7 +22,7 @@ export default function NavBar() {
   const [toggled, setToggled] = useState(false)
   const matches = useMediaQuery('(min-width: 1280px)')
   return (
-    <nav className="relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32">
+    <nav className="backdrop-blur relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32">
       <svg
         className="absolute bottom-0 left-1/2 -translate-x-1/2"
         width="250"
