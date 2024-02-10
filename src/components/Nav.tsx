@@ -124,15 +124,15 @@ export default function NavBar() {
             <motion.a
               variants={itemMotion}
               className="hover:underline"
-              href="http://github.com/Noahwekesa/wekesa-homepage.git"
-              target="_blank"
+              href="/contact"
             >
               contact
             </motion.a>
             <motion.a
               variants={itemMotion}
               className="hover:underline"
-              href="/works"
+              href="http://github.com/Noahwekesa/wekesa-homepage.git"
+              target="_blank"
             >
               source
             </motion.a>
