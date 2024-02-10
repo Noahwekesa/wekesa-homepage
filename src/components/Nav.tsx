@@ -124,7 +124,7 @@ export default function NavBar() {
             <motion.a
               variants={itemMotion}
               className="hover:underline"
-              href="/works"
+              href="/contact"
             >
               contact
             </motion.a>
