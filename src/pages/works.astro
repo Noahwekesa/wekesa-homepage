@@ -1,26 +1,38 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import LandingPages from '../components/LandingPages.astro'
 ---
 
 <BaseLayout title="Wekesa - complete projects">
   <div class="items-start underline text-5xl justify-center mx-auto flex">
     works
   </div>
+  <h1 class="text-center text-3xl m-8 underline">
+  Fullstack WebApplication
+  </h1>
   <div class="flex items-center min-h-screen container justify-center mx-auto">
     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <!--Sushiman landing page -->
-      <div class="p-5 card w-96 bg-base-100 shadow-xl">
-        <a href="../works/sushiman">
+ <!--Better bargain web Application-->
+      <div class="card rounded p-5 w-96 bg-base-100 shadow-xl">
+        <a target="_blank" href="https://betterbargains.vercel.app/">
           <figure>
-            <img src="/works/sushiman.png" alt="noahwekesa.github.io/recipe/" />
+            <img
+              src="https://github.com/Noahwekesa/better-bargains/blob/master/screenshot/better.png?raw=true"
+              alt="better Bargains"
+            />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">SUSHIMAN</h2>
-            <p>A single page website for japanese food restaurant</p>
+            <h2 class="card-title">
+            Brenyo Better Bargains Thrift Store
+          </h2>
+              <p>
+              Thrift store based in nairobi, kenya
+          </p>
           </div>
         </a>
       </div>
-      <!--Car selling brand-->
+
+            <!--Car selling brand-->
       <div class="card rounded p-5 w-96 bg-base-100 shadow-xl">
         <a href="../works/car">
           <figure>
@@ -82,6 +94,17 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           </div>
         </a>
       </div>
+
+
     </div>
+
   </div>
+<div class="mt-6 text-center">
+    <a class="btn btn-wide m-6" target="_blank" href="https://github.com/noahwekesa">VIEW MORE PROJECTS / LATEST</a>
+<h1 class="text-3xl underline mt-6">
+  Landing Pages(single page applications)
+  </h1>
+
+  </div>
+<LandingPages />
 </BaseLayout>
