@@ -1,0 +1,44 @@
+[
+  {
+    "logo": "🛒",
+    "title": "Brenyo Better Bargains Thrift Store",
+    "description": "a fullstack ecommerce website for a thriftstore",
+    "link": "https://betterbargains.vercel.app/",
+    "github": "https://github.com/Noahwekesa/better-bargains"
+  },
+  {
+    "logo": "🐛",
+    "title": "Issue Tracker",
+    "link": "https://issuetrackero.vercel.app/",
+    "description": "system that tracks, reports issues to be solved by assigning to workers",
+    "github": "https://github.com/Noahwekesa/issue-tracker"
+  },
+  {
+    "logo": "📷",
+    "title": "Photo Dump",
+    "link": "https://photoalbumapp.vercel.app/",
+    "description": "social media application that allows users to post memes",
+    "github": "https://github.com/Noahwekesa/photo-album-app"
+  },
+  {
+    "logo": "🍣",
+    "title": "Sushiman Restaraut Landing Page",
+    "link": "https://restaraunt1.netlify.app/",
+    "description": "a simple landing page for a Restaraut",
+    "github": "https://restaraunt1.netlify.app/"
+  },
+  {
+    "logo": "📓",
+    "title": "Django Todo List App",
+    "link": "https://github.com/Noahwekesa/todoListApp-django",
+    "description": "This is a simple Todo List web application built with Django, DaisyUI, and HTMX. DaisyUI provides a set of stylish UI components, and HTMX enables seamless and fast interactions between the client and server.",
+    "github": "https://github.com/Noahwekesa/todoListApp-django"
+  },
+  {
+    "logo": "👨",
+    "title": "CUSTOMER RELATIONSHIP SYSTEM(CRM)",
+    "link": "https://github.com/Noahwekesa/customer-mgmt-django-app",
+    "description": "This is a Django-based web application designed to help businesses manage customer orders, keep track of product stock, and maintain customer information efficiently.",
+    "github": "https://github.com/Noahwekesa/customer-mgmt-django-app"
+  }
+]
