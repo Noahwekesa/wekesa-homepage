@@ -7,6 +7,13 @@
     "github": "https://github.com/Noahwekesa/better-bargains"
   },
   {
+    "logo": "💻",
+    "title": "CRM/POS system",
+    "description": "Django-based web application designed to help businesses manage customer orders, keep track of product stock, and maintain customer information efficiently.",
+    "link": "https://github.com/Noahwekesa/customer-mgmt-django-app",
+    "github": "https://github.com/Noahwekesa/customer-mgmt-django-app"
+  },
+  {
     "logo": "🐛",
     "title": "Issue Tracker",
     "link": "https://issuetrackero.vercel.app/",
