@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useMediaQuery } from '../utils/useMediaQuery'
+import { Flex, Text, Button } from '@radix-ui/themes'
 
 const navMotion = {
   visible: {

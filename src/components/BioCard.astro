@@ -1,91 +1,51 @@
 ---
-import EmailSignup from '../components/subscribe/EmailSignup.astro'
+import {
+  Button,
+  Link,
+  Avatar,
+  Box,
+  Text,
+  Flex,
+  Heading
+} from '@radix-ui/themes'
 ---
 
 <div class="relative flex flex-col items-center justify-center">
-  <h4 class="glass mx-15 mb-6 p-4 rounded-xl text-xl font-bold dark:bg-gray-40 dark:text-black0">
-    Hello, i'm a software developer based in Kenya.
-  </h4>
-  <div class="flex flex-row">
-    <div>
-      <h2 class="text-5xl font-bold">Noah Wekesa</h2>
-      <p>Digital Craftsman ( software developer )</p>
-    </div>
+  <Box>
+    <Heading as="h4" mb="5">
+      Hello, I'm a software developer based in Kenya.
+    </Heading>
+  </Box>
+  <Flex>
+    <Box mb="5">
+      <Heading as="h1" size="9">Noah Wekesa</Heading>
+      <Text size="4" color="gray" align="center"
+        >Digital Craftsman (software developer)</Text
+      >
+    </Box>
     <div class="avatar ml-7">
       <div class="w-24 rounded-full">
-        <img src="./noah.jpg" alt=" noah wekesa" />
+        <Avatar size="6" src="/noah.jpg" radius="full" fallback="NW" />
       </div>
     </div>
-  </div>
-  <div>
-    <div class="relative">
-      <h2 class="px-10 text-4xl font-bold underline">Bio</h2>
-      <p id="anim-p" class="px-10 text-lg">
-        Wekesa is a fullstack developer proficient in Django web framework.
-        <br /> With 2 years of experience in web development, I specialize in <br
-        />
-        leveraging Django to build scalable, secure, and high-performance <br />
-        web solutions tailored to meet your specific needs.
-      </p>
-    </div>
-  </div>
+  </Flex>
+  <!-- bio -->
+  <Box mb="5">
+    <Heading as="h1" weight="bold" mb="1" size="8">Bio</Heading>
 
-  <div class="text-center mt-6">
-    <a href="/works" class="btn btn-primary shadow-lg">My portfolio</a>
-  </div>
+    <Flex maxWidth="500px" align="center" justify="start">
+      <Text color="gray" as="p" size="6" wrap="wrap">
+        Wekesa is a fullstack developer proficient in Django web framework. With
+        2 years of experience in web development, I specialize in leveraging
+        Django to build scalable, secure, and high-performance web solutions
+        tailored to meet your specific needs.
+      </Text>
+    </Flex>
+  </Box>
 
-  <!--Social links-->
-  <div class="mt-10 items-center flex flex-col">
-    <div>
-      <h1 class="underline text-xl m-4">On The Web</h1>
-      <a href="http://github.com/noahwekesa" target="_blank">
-        <button class="btn bg-transparent text-fuchsia-500 hover:bg-gray-900">
-          <img src="/github.svg" alt="" />
-          @noahwekesa</button
-        >
-      </a>
-
-      <div>
-        <a href="http://x.com/disabledcookie" target="_blank">
-          <button class="btn bg-transparent text-fuchsia-500 hover:bg-gray-900">
-            <img src="/twitter.svg" alt="" />
-            @noahwekesa</button
-          >
-        </a>
-      </div>
-
-      <div>
-        <a href="mailto:noahwekesa0@gmail.com" target="_blank">
-          <button class="btn bg-transparent text-fuchsia-500 hover:bg-gray-900">
-            <img src="/email.png" alt="" />
-            Noahwekesa0@gmail.com</button
-          >
-        </a>
-      </div>
-
-      <div>
-        <a href="" target="_blank">
-          <button class="btn bg-transparent text-fuchsia-500 hover:bg-gray-900">
-            <img src="/whatsapp.svg" width="24" height="24" alt="whatsapp" />
-            Whatsapp</button
-          >
-        </a>
-      </div>
-      <div>
-        <a href="" target="_blank">
-          <button class="btn bg-transparent text-fuchsia-500 hover:bg-gray-900">
-            +254721914166</button
-          >
-        </a>
-      </div>
-
-      <EmailSignup />
-    </div>
-  </div>
-
-  <style>
-    .glass {
-      --glass-blur: 5px;
-    }
-  </style>
+  <Box mb="5">
+    <Link href="/works">
+      <Button color="indigo" size="4" variant="solid">My portfolio</Button>
+    </Link>
+  </Box>
 </div>

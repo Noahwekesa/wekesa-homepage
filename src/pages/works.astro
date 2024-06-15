@@ -1,4 +1,5 @@
 ---
+import { Heading, Text, Link } from '@radix-ui/themes'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import projects from '../data/projects.json'
 ---
@@ -20,14 +21,10 @@ import projects from '../data/projects.json'
             >
               {project.logo}
             </span>
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
-                {project.title}
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-              {project.description}
-            </p>
+            <Link href="#">
+              <Heading as="h1">{project.title}</Heading>
+            </Link>
+            <Text color="gray">{project.description}</Text>
 
             <div class="flex flex-row space-x-2">
               <a

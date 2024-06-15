@@ -1,0 +1,37 @@
+---
+import { Grid, Card, Text, Heading } from '@radix-ui/themes'
+---
+
+<div class="justify-center text-center my-20 mx-36">
+  <Heading mb="3" as="h1" size="7" weight="bold">Services</Heading>
+
+  <Grid justify="center" columns="2" gap="3" rows="repeat(2, 80px)">
+    <Card size="2">
+      <Heading as="h5" size="7"> Web Development </Heading>
+      <Text as="p" color="gray" size="6" wrap="balance">
+        Start building your next project in minutes
+      </Text>
+    </Card>
+
+    <Card variant="classic">
+      <Heading as="h5" size="3">Web Scrapping</Heading>
+      <Text as="div" color="gray" size="2">
+        Start building your next project in minutes
+      </Text>
+    </Card>
+
+    <Card variant="surface">
+      <Heading as="div" size="2" weight="bold"> Quick start </Heading>
+      <Text as="div" color="gray" size="2">
+        Start building your next project in minutes
+      </Text>
+    </Card>
+
+    <Card variant="surface">
+      <Text as="div" size="2" weight="bold"> Quick start </Text>
+      <Text as="div" color="gray" size="2">
+        Start building your next project in minutes
+      </Text>
+    </Card>
+  </Grid>
+</div>
