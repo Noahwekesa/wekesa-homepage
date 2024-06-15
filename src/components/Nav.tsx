@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { useMediaQuery } from '../utils/useMediaQuery'
-import { Flex, Text, Button } from '@radix-ui/themes'
+import { Link, Box } from '@radix-ui/themes'
 
 const navMotion = {
   visible: {
@@ -40,7 +40,9 @@ export default function NavBar() {
         />
       </svg>
       <div className="text-lg font-bold">
-        <a href="/">Noah Wekesa</a>
+        <Link size="6" href="/">
+          Noah Wekesa
+        </Link>
       </div>
 
       {/* title */}
@@ -59,19 +61,19 @@ export default function NavBar() {
       {/* check if were on mobile or not */}
       {matches && (
         <div className="flex gap-12">
-          <a className="hover:underline" href="/works">
+          <Link size="5" href="/works">
             works
-          </a>
-          <a className="hover:underline" href="/contact">
+          </Link>
+          <Link size="5" href="/contact">
             contact
-          </a>
-          <a
-            className="hover:underline"
+          </Link>
+          <Link
+            size="5"
             href="http://github.com/Noahwekesa/wekesa-homepage.git"
             target="_blank"
           >
             source
-          </a>
+          </Link>
         </div>
       )}
 
@@ -83,12 +85,12 @@ export default function NavBar() {
         >
           <motion.span
             animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
-            className="block h-0.5 w-8 bg-black"
+            className="block h-0.5 w-8 bg-black dark:bg-white"
           ></motion.span>
 
           <motion.span
             animate={{ width: toggled ? 0 : 24 }}
-            className="block h-0.5 w-6 bg-black"
+            className="block h-0.5 w-6 bg-black dark:bg-white"
           ></motion.span>
           <motion.span
             animate={{
@@ -96,7 +98,7 @@ export default function NavBar() {
               y: toggled ? -8 : 0,
               width: toggled ? 32 : 16
             }}
-            className="block h-0.5 w-4 bg-black"
+            className="block h-0.5 w-4 bg-black dark:bg-white"
           ></motion.span>
         </div>
       )}
@@ -107,7 +109,7 @@ export default function NavBar() {
             x: 25
           }}
           initial={{ opacity: 0, x: 25 }}
-          className="fixed flex bottom-0 z-[1] bg-base-100 left-0 w-full h-screen items-center justify-center"
+          className="fixed flex bottom-0 z-[1] bg-black left-0 w-full h-screen items-center justify-center"
         >
           <motion.div
             variants={navMotion}

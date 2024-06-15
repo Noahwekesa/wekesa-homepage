@@ -1,11 +1,10 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from 'astro:transitions'
 import '../style/global.css'
 import '@fontsource/syne'
 import '@radix-ui/themes/styles.css'
 import { Theme } from '@radix-ui/themes'
 import NavBar from '../components/Nav'
-import ThemeChanger from '../components/ThemeChanger.astro'
 import Footer from '../components/footer.astro'
 
 interface Props {
@@ -23,8 +22,7 @@ const { title } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/noah.jpg" />
 
-    <script 
-    src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"
     ></script>
     <title>{title}</title>
     <ViewTransitions />
