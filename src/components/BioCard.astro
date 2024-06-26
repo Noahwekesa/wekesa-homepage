@@ -8,6 +8,7 @@ import {
   Flex,
   Heading
 } from '@radix-ui/themes'
+import Profile from './Profile.tsx'
 ---
 
 <div class="relative flex flex-col items-center justify-center">
@@ -23,11 +24,7 @@ import {
         >Digital Craftsman (software developer)</Text
       >
     </Box>
-    <div class="avatar ml-7">
-      <div class="w-24 rounded-full">
-        <Avatar size="6" src="/noah.jpg" radius="full" fallback="NW" />
-      </div>
-    </div>
+    <Profile client:load />
   </Flex>
   <!-- bio -->
   <Box mb="5">

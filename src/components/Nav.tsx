@@ -62,17 +62,17 @@ export default function NavBar() {
       {matches && (
         <div className="flex gap-12">
           <Link size="5" href="/works">
-            works
+            Works
           </Link>
           <Link size="5" href="/contact">
-            contact
+            Contact
           </Link>
           <Link
             size="5"
             href="http://github.com/Noahwekesa/wekesa-homepage.git"
             target="_blank"
           >
-            source
+            Source
           </Link>
         </div>
       )}
@@ -122,14 +122,14 @@ export default function NavBar() {
               className="hover:underline"
               href="/works"
             >
-              works
+              Works
             </motion.a>
             <motion.a
               variants={itemMotion}
               className="hover:underline"
               href="/contact"
             >
-              contact
+              Contact
             </motion.a>
             <motion.a
               variants={itemMotion}
@@ -137,7 +137,7 @@ export default function NavBar() {
               href="http://github.com/Noahwekesa/wekesa-homepage.git"
               target="_blank"
             >
-              source
+              Source
             </motion.a>
           </motion.div>
         </motion.div>
